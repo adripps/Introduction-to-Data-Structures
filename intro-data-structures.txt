@@ -1,0 +1,48 @@
+1. 
+a)
+INIT amusementParkLine to an empty array
+SET amusementParkLine[FIRST INDEX] to Vivian
+SET amusementParkLine[SECOND INDEX] to Ava
+SET amusementParkLine[THIRD INDEX] to Josh
+SET amusementParkLine[FOURTH INDEX] to Patrick
+SET amusementParkLine[FIFTH INDEX] to Mike
+b)
+PUSH amusementParkLine[LAST INDEX] Mary
+c)
+FUNCTION findJosh(amusementParkLine)
+	FOR each person in amusementParkLine
+		IF person equals Josh
+			RETURN index
+		END IF
+	END FOR
+END FUNCTION
+d)
+FUNCTION findEmily(amusementParkLine)
+	FOR each person in amusementParkLine
+		IF person equals Emily
+			RETURN index
+		ELSE 
+			RETURN "This person isn't in line"
+		END IF
+	END FOR
+END FUNCTION
+e)
+SPLICE amusementParkLine at Ava's index minus 1 and enter Melissa
+f)
+SPLICE amusementParkLine at Patrick's index and remove 1 item
+
+2.
+Cleaning a stack of dishes could be organized with a stack data structure. You would have to clean the last dishes put into the sink first.
+INIT dirtyDishStack to an empty array
+SET dirtyDishStack[INDEX] to pan
+SET dirtyDishStack[INDEX] to plate
+SET dirtyDishStack[INDEX] to bowl
+SET dirtyDishStack[INDEX] to spoon
+SET dirtyDishStack[INDEX] to fork
+FUNCTION cleanDishes(dirtyDishStack)
+	FOR each dish in dirtyDishStack
+		POP dirtyDishStack
+	END FOR
+END FUNCTION
+
+3. My data structure allows developers to access and manipulate the data because they could easily add and remove data based on any given circumstances surrounding the sink of dishes as well as my data structure being clearly worded so the function of it is obvious.
